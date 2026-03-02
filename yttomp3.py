@@ -5,7 +5,7 @@ from PyQt5.QtCore import Qt
 
 class ytConverter(QWidget):
     def __init__(self):
-        super().__init__()
+        QWidget.__init__()
         self.title_label, self.top_label, self.bottom_label = QLabel("Youtube to Audio Download", self), QLabel("Paste the url below and click the button.", self), QLabel(self)
         self.info_button, self.download_button, self.file_button = QPushButton("Search", self), QPushButton("Download", self), QPushButton("📂", self)
         self.url_input = QLineEdit(self)
